@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,300&display=swap" rel="stylesheet');
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'WhaleITried'; /*to use later*/
+    src: url('/fonts/whale-i-tried/Whale\ I\ Tried\ -\ TTF.ttf'); /*URL to the font*/
+}
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+}
+body ::selection{
+    background-color: #990100;
+    color: #f5f5ff;
+}
+.border-primary{
+    border-top: .2rem solid #3f3f95!important;
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    background-color:#990100;
+    padding: 5 !important;
+}
+.navbar-brand img{
+    height: 100px;
+    padding-left: 20px;        
+}
+.navbar-brand{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50px;
+    margin-left: 0px;
+    padding: 10px;
+}
+.navbar-nav li{
+padding: 0 10px;
+} 
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+.fa-bars{
+    color: #ffffff;
+    font-size: 30px !important;
+}
+.navbar-toggler{
+    outline: none;
+}
+/*----carousel----*/
+#banner h5{
+font-size: 40px;
+font-weight: 600;
+}
+#banner p{
+    font-size: 30px;
+    font-weight: 500;
+    left: 60;
+}
+#banner .school-vision h5{
+    font-size: 40px;
+    font-weight: 600;
+    left: 60;
+}
+#banner .school-vision p{
+    font-size: 30px;
+    font-weight:500
+}
+#banner .w-100 {
+  width: 100% !important;
+  height: 90vh;
+}
+#banner .carousel-inner img{
+    object-fit: cover;
+}
+#banner .carousel-item::before {
+    content:"";
+    display: block;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.6;
+}
+/*carousel transition*/
+.carousel-item-next,
+.carousel-item-next,
+.carousel.item.active{
+    transition: transform 1.2s ease;
+}
+#banner .btn-primary{
+    color: #3f3f95!important;
+    
+}
+/*--about us--*/
+.motto-statement{
+    font-weight: 600;
+}
+.border-danger{
+    border-top: .2rem solid #990100!important;
+}
+#about-us .inner{
+    overflow: hidden;
+}
+#about-us .inner img{
+    width: 100%;
+    height:65vh;
+    margin-bottom: 10%;
+    object-fit: cover;
+    box-shadow: #404040;    
+    transition: all 1.5s ease;    
+}
+#about-us .inner:hover img{
+    transform: scale(1.5);
+
+}
+/*--programs--*/
+
+#programs{
+    background-color: #990100;
+    padding: 20px;
+}
+.border-light{
+    border-top: .2rem solid #3f3f95!important;
+}
+#programs .container{
+    margin-top: 10%;
+} 
+.program-card .btn-danger{
+    opacity: 0;
+}
+.program-card:hover .btn-danger{
+    opacity: 1;
+    transform: translateY(0px);
+}
+#programs .card{
+    border: none;
+    margin-top: 20px;
+}
+#programs .card:hover{
+    box-shadow: 0 8px 50px rgba(0,0,0,0.2);
+    transform: scale(1.1);   
+    transition: 0.7s;
+}
+#programs .card-body{
+    background-color:#fff;
+
+}
+#programs .card-title{
+    color: #000000;
+}
+#programs .card-text {
+    color:#000000;
+}
+#programs .card a{
+    text-decoration: none!important;
+}
+#programs .card p{
+    text-decoration: none;
+    color: #000000;
+}
+#programs img{   
+    object-fit: contain;
+    overflow: hidden;
+}
+#programs .btn{
+    color: #3f3f95!important;
+    background-color: #f5f5f5;
+    border: none;
+    border-bottom: 2px solid #3f3f95;
+    align-items: center;
+    justify-content: center;
+}
+#programs i{
+    color: #3f3f95!important;
+}
+#programs img{    
+    width: 100%;
+    height: 40vh;
+}
+/*---Events---*/
+#events{
+    margin-bottom: 50px;
+}
+#events .card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+     
+}
+#events .card{
+    font-size: 1em;
+    overflow: hidden;
+    padding: 5;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    margin-top:20px;
+}
+
+#events .carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+#events .carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+#events .carousel-indicators .active {
+    background-color: white;
+    max-width: 12px;
+    margin: 0 3px;
+    height: 12px;
+}
+.btn {
+  margin-top: auto;
+}
+
+#events .carousel-inner img {
+width: 100%;
+height: 25vw;
+object-fit: cover;
+}
+/*---Stats--*/
+#stats{
+    background-color: #990100;
+    margin: 0;
+    padding:0;
+    top:0;
+}
+.stats i{
+    font-size: 50px;
+    color: #000000;
+}
+.stats h2{
+    font-weight: bold;
+    font-size: 42px;
+    color: #3f3f95;
+}
+.stats p{
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+/*Our Staff--*/
+#staff img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 0 auto 20px;    
+    margin-top: -50px;
+    object-fit: cover;
+    overflow: hidden;    
+}
+#staff i{
+    font-size: 26px;
+    color: #000000;
+}
+#staff p{
+    font-weight:500; 
+}
+#staff .card{
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #990100;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+#staff .card:hover{
+    background: #990100;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px #990100;
+}
+#staff .card:hover h3,#team .card:hover i{
+    color:#fff;
+}
+
+/*--Testimonials--*/
+#testimonials{
+    margin: 0;
+    padding: 0;
+    background-color: #990100;
+}
+#testimonials i{
+    font-size: 30px;
+}
+#testimonials .card img{
+    height: 20vh;
+    object-fit: cover;
+}
+#testimonials .card{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/*--Gallery--*/
+.item img{
+    object-fit: cover;
+}
+.item{
+    transition: .5s ease-in-out;
+}
+.item:hover{
+    filter: brightness(50%);
+    transform: rotate(-5deg);
+}
+
+/*--Footer--*/
+footer{    
+    position: absolute;
+    width: 100%;
+}
+.page-footer a{
+    color: #f5f5f5;
+}
+.page-footer img{
+    height: 12.5vh;
+}
+.footer-copyright{
+    background: #990100;    
+}
+.footer-copyright p{
+    color: #f5f5f5;
+}
+.page-footer li{
+    color: #f5f5f5;;
+}
+.page-footer h6{
+    color: #990100;
+}
+.page-footer p{
+    color: #f5f5f5;
+}
+.page-footer hr{
+    color: #fff;
+}
+.page-footer a{
+    text-decoration: none;
+}
+/*----Programs page---*/
+#programs-list img{
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+}
+.curriclum-title{
+    font-family: WhaleITried;
+    justify-content: center !important;
+    text-align: center !important;
+
+}
+.programs-banner{
+    position: relative;
+    text-align: center;
+}
+.programs-banner p { 
+    position: absolute; 
+    font-weight: 600;
+    font-size: 40px;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f5f5f5;         
+} 
+#programs-content p{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 0;
+}
+#programs-content img{
+    width: 100%;
+    height: 70vh;
+}
+.programs-banner::before {
+    content:"";
+    display: block;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.6;
+}
+
+/*---Register Page---*/
+#registration img{
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+}
+.register-banner {
+    position: relative;
+    text-align: center;
+}
+.register-banner p{
+     position: absolute;	 
+    font-weight: 600;
+    font-size: 40px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f5f5f5; 
+}
+.register-banner::before {
+    content:"";
+    display: block;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.6;
+}
+/*--About-US Page----*/
+#about-us-page img{
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+}
+.about-us-banner {
+    position: relative;
+    text-align: center;
+}
+.about-us-banner p{
+     position: absolute;	 
+    font-weight: 600;
+    font-size: 40px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f5f5f5; 
+}
+.about-us-banner::before {
+    content:"";
+    display: block;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.6;
+}
+#about-us-content img{
+    height: 60vh;
+    object-fit: cover;
+}
+/*--Meet our Staff--*/
+#about-us-content .about-staff img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 0 auto 20px;    
+    margin-top: -50px;
+    object-fit: cover;
+    overflow: hidden;
+    align-items: center;
+}
+#about-us-content .about-staff i{
+    font-size: 26px;
+    color: #000000;
+}
+#about-us-content .about-staff p{
+    font-weight:500; 
+}
+#about-us-content .about-staff .card{
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #990100;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    overflow: hidden;
+}
+#about-us-content .about-staff .card:hover{
+    background: #990100;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px #990100;
+}
+.about-staff .card:hover h3,#team .card:hover i{
+    color:#fff;
+}
+.icon-large{
+    font-size: 80px;
+}
+/*#about-us-content .tab-container{
+    display: block;
+}
+#about-us-content [data-tab-content]{
+    display: none;
+}
+#about-us-content .active[data-tab-content]{
+    display: block;
+    padding: 35px;
+    margin-top: 0;
+    align-items: center;
+}
+#about-us-content .tabs{
+    display:block;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.75rem;    
+}
+#about-us-content .tab{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+#about-us-content .tab.active{
+    background-color: #990100;
+    border-radius: 10px;
+    color: #fff!important;
+}
+#about-us-content .active[data-tab-target]{
+    color: #990100;
+}*/
+
+/*---Media queries--*/
+
+@media(max-width:992px){
+
+}
+
+@media(max-width:768px){
+    
+}
+
+@media(max-width:576px){
+    
+}
+
+/* -- Firefox Bud fix --*/
+.carousel-item{
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s eaase;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+/*--- Fixed Background Image --*/
+figure{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0! important;
+}
+.fixed-wrap{
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#fixed{
+    background-image: url('assets\css\fonts\images\fistbg.jpg');
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"]{
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (potrait phoness, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width:768px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+

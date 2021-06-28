@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Msingi School Academy | Register</title>
+    <meta charset="utf-8">
+    <!--Tell IE to use latest rendering engine-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Set page width to size of the device and zoom level to 1-->
+    <meta name="viewport" content="width = device-width, initial scale=1">
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!---Google Font-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <style type="text/css"> 
+        :root{
+            --primary-color: #990100;
+            --secondary-color: #e6eef9;            
+        }
+        .tab-container{
+            display:block;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        
+        [data-tab-content]{
+            display: none;
+        }
+        .active[data-tab-content]{
+            display: block;
+            background: #fff;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            padding: 35px;
+            box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15 );
+            margin-top: 0;
+            align-items: center;
+        }
+        .tabs{
+            display: flex;
+            background: #fff;
+            box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15 );
+            justify-content: space-around;
+            list-style-type: none;
+            margin: 0;
+            padding: 0.75rem;
+            border-top-left-radius: 50px!important;
+            border-top-right-radius: 50px!important;
+        }
+        .tab{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 54px;
+            width: 200px;
+            font-size: 1.25rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: color 0.15s ease-in;
+            padding: 10px;
+        }
+        .notification{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5rem;
+            height: 2rem;
+            margin-left: 0.75rem;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            transition: 0.15s ease-in;
+            color: #fff;
+        }
+        .tab.active{
+            background-color: var(--primary-color);
+            border-radius: 40px;
+            transition: 0.25s ease-out;
+            height: 56px;
+            width: 200px; 
+            color: #fff!important;          
+        }
+        .tab:hover{
+            background-color: var(--primary-color);
+            border-radius: 50px;
+            color: #fff;
+        }
+        .active[data-tab-target]{
+            color: var(--primary-color);
+        }
+        .active[data-tab-target] > .notification{
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+    <!--Javascript-->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <!--header/navigation-->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="image assets/logo.jpeg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" style="color: #ffffff; "
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="programs.html">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="#">Activities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #ffffff;" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary rounded-pill" style="color: #ffffff;" href="register.html"><span style="font-size: smaller;">REGISTER</span></a>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--End of navigation-->
+    </section>
+    <section id="registration">
+        <div class="register-banner justified-content-center">
+            <img class="w-100 img-fluid" alt="" src="image assets/_MG_9778.jpg">
+            <p>REGISTER</p>
+        </div>
+    </section>
+<!---Requirements-->
+<section id="prerequisites">
+  <div class="container">
+    <div class="tab-container">
+        <ul class="tabs">
+            <li data-tab-target="#requirements" class="active tab" title="Requirements" >Requirements</li>
+            <li data-tab-target="#admission-charges" class="tab" title="Admission Charges">Admission<span class="notification">NEW</span></li>
+            <li data-tab-target="#fee-structure" class="tab" title="Fee Structure">Fee structure</li>
+        </ul>
+        <div class="tab-content">
+            <div id="requirements" data-tab-content class ="active">       
+                    <p><i class="fa fa-check-circle"></i>True copy of the Birth Certficate</p>
+                    <p><i class="fa fa-check-circle"></i>UPI number where applicable</p>
+                    <p><i class="fa fa-check-circle"></i>Two passport-size photo</p>
+                    <p><i class="fa fa-check-circle"></i>Immunization certificate</p>
+                    <p><i class="fa fa-check-circle"></i>Two white face towels and soft pair of indoor shoes (preferably white rubber shoes)</p>                    
+                    <p>Note</p>
+                        <p><i class="fa fa-check-circle"></i>Fees MUST be paid in full before the opening date for all new pupils</p>
+                        <p><i class="fa fa-check-circle"></i>All payments can be done through the following Bank Account:</p>
+                        <p>KCB Account Number 1268235520</p>
+                        <p><i class="fa fa-check-circle"></i>Kindly bring the Bank Slip to school for proof of payment</p>
+                        <p><i class="fa fa-check-circle"></i>The admission procedure MUST be fully completed and approved before payments are made.</p>
+                        <p><i class="fa fa-check-circle"></i>Refundable Security Deposit is refundable when an official notice to leave is given and refund done in two weeks</p>
+             </div>
+             <div id="admission-charges" data-tab-content>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover justified-content-center">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Registrattion (Non Refndable)</th>
+                                <td>Ksh2,000</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">Refundable Security Deposit</th>
+                              <td>Ksh 3,000</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">TOTAL</th>
+                              <td>Ksh 5,000</td>                    
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+             </div>
+             <div id="fee-structure" data-tab-content>
+                <table class="table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">PAYMENTS PER TERM</th>
+                        <th scope="col">TERM 1</th>
+                        <th scope="col">TERM 2</th>
+                        <th scope="col">TERM 3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">TUITION (Inclusive of Tea, Lunch, Diary, Books, Stationery and ICT Integration)</th>
+                        <td>22,500</td>
+                        <td>22,500</td>
+                        <td>22,500</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">INCIDENT COVERAGE</th>
+                        <td>500</td>
+                        <td>500</td>
+                        <td>500</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">ACTIVITY</th>
+                        <td>1,000</td>
+                        <td>1,000</td>
+                        <td>1,000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">PA FUNDS</th>
+                        <td>1,000</td>
+                        <td>1,000</td>
+                        <td>1,000</td>
+                      </tr><tr>
+                        <th scope="row">TOTAL</th>
+                        <td>25,000</td>
+                        <td>25,000</td>
+                        <td>25,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+             </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+    <!---Footer--->
+    <footer class="page-footer bg-dark">
+        <div class="container-fluid text-md-left mt-5">
+            <div class="row py-4 d-flex">
+                <div class="col-md-4 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">THE MSINGI ACADEMY SCHOOL</h6>
+                    <hr class="bg-succes mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; height: 2px;">
+                    <p>TUNAJENGA MSINGI IMARA</p>
+                    <div class="socials">
+                        <a href="#"><i class="fa fa-facebook mr-4" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter mr-4" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram mr-4" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">QUICK LINKS</h6>
+                    <hr class="bg-succes mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; height: 2px;">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="index.html">HOME</a></li>
+                        <li class="my-2"><a href="programs.html">PROGRAMS</a></li>
+                        <li class="my-2"><a href="#">EVENTS</a></li>
+                        <li class="my-2"><a href="#">ABOUT US</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">CONTACT US</h6>
+                    <hr class="bg-succes mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; height: 2px;">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><i class="fa fa-map-marker" aria-hidden="true">&nbsp;MAMBOLEO, KISUMU KENYA</i>
+                        </li>
+                        <li class="my-2"><i class="fa fa-phone" aria-hidden="true">&nbsp;<a href="tel:{+254753560221}">+254 753 560 221</a></i></li>
+                        <li class="my-2"><i class="fa fa-envelope" aria-hidden="true">&nbsp;<a href="mailto:{themsingiacademy@gmail.com}">themsingiacademy@gmail.com</a></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            <p>All rights reserved &copy; The Msingi Academy School 2021</p>
+        </div>
+    </footer>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--JS for tabs-->
+    
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS and Fontawesome last -->
+    
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/42a81cfb83.js" crossorigin="anonymous"></script>
+        </body>
+    
+</html>
