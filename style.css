@@ -465,10 +465,6 @@ footer{
     background: black;
     opacity: 0.6;
 }
-#about-us-content img{
-    height: 60vh;
-    object-fit: cover;
-}
 /*--Meet our Staff--*/
 #about-us-content .about-staff img{
     width: 100px;
@@ -543,6 +539,18 @@ footer{
 #about-us-content .active[data-tab-target]{
     color: #990100;
 }*/
+#about-us-content .card-img{
+    height: 200px;
+    object-fit: cover;
+    margin-top: 0 auto!important;
+    margin-bottom: 0 auto!important;
+    float: left;
+}
+#about-us-content .activity-cards{
+    display: flex;
+    flex: 1 auto;
+}
+
 
 /*---Media queries--*/
 
