@@ -465,80 +465,12 @@ footer{
     background: black;
     opacity: 0.6;
 }
-/*--Meet our Staff--*/
-#about-us-content .about-staff img{
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    margin: 0 auto 20px;    
-    margin-top: -50px;
-    object-fit: cover;
-    overflow: hidden;
-    align-items: center;
-}
-#about-us-content .about-staff i{
-    font-size: 26px;
-    color: #000000;
-}
-#about-us-content .about-staff p{
-    font-weight:500; 
-}
-#about-us-content .about-staff .card{
-    border-radius: 0;
-    box-shadow: 5px 5px 15px #990100;
-    transition: all 0.3s ease-in;
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    overflow: hidden;
-}
-#about-us-content .about-staff .card:hover{
-    background: #990100;
-    color: #ffffff;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 5px 5px 10px #990100;
-}
-.about-staff .card:hover h3,#team .card:hover i{
-    color:#fff;
-}
+/*---Changing icon size--*/
 .icon-large{
-    font-size: 80px;
-}
-/*#about-us-content .tab-container{
-    display: block;
-}
-#about-us-content [data-tab-content]{
-    display: none;
-}
-#about-us-content .active[data-tab-content]{
-    display: block;
-    padding: 35px;
-    margin-top: 0;
-    align-items: center;
-}
-#about-us-content .tabs{
-    display:block;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0.75rem;    
-}
-#about-us-content .tab{
-    display: block;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 10px;
-}
-#about-us-content .tab.active{
-    background-color: #990100;
-    border-radius: 10px;
-    color: #fff!important;
-}
-#about-us-content .active[data-tab-target]{
+    font-size: 60px;
     color: #990100;
-}*/
+}
+
 #about-us-content .card-img{
     height: 200px;
     object-fit: cover;
@@ -546,10 +478,48 @@ footer{
     margin-bottom: 0 auto!important;
     float: left;
 }
+#intro{
+    background-color: #e6eef9;
+    width: 100%;
+}
 #about-us-content .activity-cards{
     display: flex;
     flex: 1 auto;
 }
+.about-us-container{
+    background-color: #3f3f95;
+    border-radius: 5px;
+    margin-top: -50px;
+    overflow: hidden;
+}
+.about-us-container h3{
+    color: #fff;
+    font-weight: 300;
+}
+.about-us-container p{
+    bottom: 0!important;
+    color: #fff;
+}
+
+#about-us-content .border-danger{
+    color: #990100!important;
+}
+.mission{
+    background-color: #fff;
+}
+.vision{
+    background-color: #fff;
+}
+.facilities p{
+    display: block;
+}
+.facilities img{
+    object-fit: cover;
+    height: 25vh;
+    width: 100%;
+    border-radius: 10px;
+}
+
 
 
 /*---Media queries--*/
