@@ -19,6 +19,29 @@ body ::selection{
 .border-primary{
     border-top: .2rem solid #3f3f95!important;
 }
+.my-primary{
+    background-color: #3f3f95;
+}
+/*---scrollbar--*/
+::-webkit-scrollbar {
+    width: 10px;    
+  }  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 10px; 
+  }   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3f3f95;
+    border-radius: 10px; 
+  }  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3f3f95; 
+  }
+/*---Navigation bar---*/
+
 #nav-bar{
     position: sticky;
     top: 0;
@@ -132,11 +155,17 @@ font-weight: 600;
     transform: scale(1.5);
 
 }
+#about-us h1{
+    letter-spacing: 1px;
+}
 /*--programs--*/
 
 #programs{
     background-color: #990100;
     padding: 20px;
+}
+#programs h1{
+    letter-spacing: 1px;
 }
 .border-light{
     border-top: .2rem solid #3f3f95!important;
@@ -199,6 +228,9 @@ font-weight: 600;
 #events{
     margin-bottom: 50px;
 }
+#events h1{
+    letter-spacing: 1px;
+}
 #events .btn-danger{
     border: none;
     background-color:#f5f5f5;
@@ -218,9 +250,12 @@ font-weight: 600;
     padding:0;
     top:0;
 }
+#stats h1{
+    letter-spacing: 1px;
+}
 .stats i{
     font-size: 50px;
-    color: #fff;
+    color: #000000;
 }
 .stats h2{
     font-weight: bold;
@@ -230,7 +265,7 @@ font-weight: 600;
 .stats p{
     font-weight: bold;
     letter-spacing: 1px;
-    color: #fff;
+    color: #000000;
 }
 
 /*Our Staff--*/
@@ -242,6 +277,9 @@ font-weight: 600;
     margin-top: -50px;
     object-fit: cover;
     overflow: hidden;    
+}
+#staff h1{
+    letter-spacing: 1px;
 }
 #staff i{
     font-size: 26px;
@@ -274,6 +312,9 @@ font-weight: 600;
     padding: 0;
     background-color: #990100;
 }
+#testimonials h1{
+    letter-spacing: 1px;
+}
 #testimonials i{
     font-size: 30px;
 }
@@ -287,6 +328,9 @@ font-weight: 600;
 }
 
 /*--Gallery--*/
+#gallery h1{
+    letter-spacing: 1px;
+}
 .item img{
     object-fit: cover;
 }
@@ -331,6 +375,7 @@ footer{
     text-decoration: none;
 }
 /*----Programs page---*/
+
 #programs-list img{
     object-fit: cover;
     width: 100%;
@@ -353,7 +398,8 @@ footer{
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #f5f5f5;         
+    color: #f5f5f5;
+    letter-spacing: 30px;         
 } 
 #programs-content p{
     margin-top: 0;
@@ -394,6 +440,7 @@ footer{
     left: 50%;
     transform: translate(-50%, -50%);
     color: #f5f5f5; 
+    letter-spacing: 30px;
 }
 .register-banner::before {
     content:"";
@@ -406,6 +453,76 @@ footer{
     background: black;
     opacity: 0.6;
 }
+#contact-us{
+    position: relative;
+}
+#contact-us h1{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 3em;
+    line-height: 48px;
+}
+.contact-form{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15 );
+}
+.contact-form .form-field{
+    position: relative;
+    margin: 20px 0;
+}
+.contact-form .input-text{
+    display: block;
+    width: 50%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #3f3f95;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.non-empty + .label
+.contact-form .input-text:focus{
+    transform: translateY(-24px);
+}
+.contact-form .input-text:focus{
+    outline: none;
+}
+.contact-form .label{
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000000;
+    cursor: text;
+    text-transform: capitalize;
+    transition: transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn{
+    display: inline-block;
+    background: #3f3f95;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}
+.contact-form iframe{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15 );
+}
+
+
 /*--About-US Page----*/
 #about-us-page img{
     object-fit: cover;
@@ -423,7 +540,8 @@ footer{
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #f5f5f5; 
+    color: #f5f5f5;
+    letter-spacing: 30px; 
 }
 .about-us-banner::before {
     content:"";
@@ -438,9 +556,11 @@ footer{
 }
 .icon-large{
     font-size: 60px;
-    color: #990100;
+    color: #3f3f95;
 }
-
+#about-us-content h1{
+    letter-spacing: 1px;
+}
 #about-us-content .card-img{
     height: 200px;
     object-fit: cover;
@@ -451,6 +571,12 @@ footer{
 #intro{
     background-color: #e6eef9;
     width: 100%;
+}
+#intro .border-danger{
+    color: #3f3f95!important;
+}
+#intro .border-light{
+    color: #3f3f95!important;
 }
 #about-us-content .activity-cards{
     display: flex;
@@ -470,17 +596,7 @@ footer{
     bottom: 0!important;
     color: #fff;
 }
-
-#about-us-content .border-danger{
-    color: #990100!important;
-}
-#about-us-content .border-light{
-    color: #990100!important;
-}
-.mission{
-    background-color: #fff;
-}
-.vision{
+.mission, .vision{
     background-color: #fff;
 }
 .facilities p{
@@ -492,17 +608,7 @@ footer{
     width: 100%;
     border-radius: 10px;
 }
-.breakfast h3{
-    background-color: #3f3f95;
-    border-radius: 10px;
-    color: #fff;
-}
-.lunch h3{
-    background-color: #3f3f95;
-    border-radius: 10px;
-    color: #fff;
-}
-.snacks h3{
+.breakfast h3, .lunch h3, .snacks h3{
     background-color: #3f3f95;
     border-radius: 10px;
     color: #fff;
