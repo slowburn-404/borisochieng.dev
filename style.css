@@ -138,7 +138,7 @@ font-weight: 600;
     font-weight: 600;
 }
 .border-danger{
-    border-top: .2rem solid #990100!important;
+    border-top: .2rem solid #3f3f95!important;
 }
 #about-us .inner{
     overflow: hidden;
@@ -161,7 +161,7 @@ font-weight: 600;
 /*--programs--*/
 
 #programs{
-    background-color: #990100;
+    /*background-color: #990100;*/
     padding: 20px;
 }
 #programs h1{
@@ -191,7 +191,10 @@ font-weight: 600;
 }
 #programs .card-body{
     background-color:#fff;
-
+    border-radius: 50px;
+}
+#programs .program-card{
+    box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15 );
 }
 #programs .card-title{
     color: #000000;
@@ -245,7 +248,7 @@ font-weight: 600;
 }
 /*---Stats--*/
 #stats{
-    background-color: #990100;
+    /*background-color: #990100;*/
     margin: 0;
     padding:0;
     top:0;
@@ -310,7 +313,7 @@ font-weight: 600;
 #testimonials{
     margin: 0;
     padding: 0;
-    background-color: #990100;
+    /*background-color: #990100;*/
 }
 #testimonials h1{
     letter-spacing: 1px;
@@ -581,6 +584,10 @@ footer{
 #about-us-content .activity-cards{
     display: flex;
     flex: 1 auto;
+}
+#activities .card{
+    border-radius: 10px;
+    box-shadow: 0 8px 50px rgba(0,0,0,0.2);
 }
 .about-us-container{
     background-color: #3f3f95;
