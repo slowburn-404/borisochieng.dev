@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,300&display=swap" rel="stylesheet');
 html{
     scroll-behavior: smooth;
+    font: 62.5%;
 }
 @font-face {
     font-family: 'WhaleITried'; /*to use later*/
@@ -70,6 +71,19 @@ body ::selection{
     width: 100%;
     height: 50vh;
     object-fit: cover;
+}
+#breadcrumb-navigation .breadcrumb-nav{    
+    background-color: #f5f5f5;
+    width: 100%;
+}
+#breadcrumb-navigation .breadcrumb-nav a{
+    text-decoration: none !important;
+    margin-left: 0.5rem;
+}
+#breadcrumb-navigation .breadcrumb-nav li{
+    /*margin-left: 1rem;*/
+    font-size: 1.5rem;
+    color: #000;
 }
 /*---Navigation bar---*/
 
