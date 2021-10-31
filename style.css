@@ -173,10 +173,13 @@ font-weight: 600;
 }
 #hero-banner .w-100 {
   width: 100% !important;
-  height: 92vh;
+  max-height: 38rem;
 }
 #hero-banner .carousel-inner img{
-    object-fit: cover;
+    object-fit: center;
+}
+.carousel-container{
+    float: right;
 }
 #hero-banner .carousel-item::before {
     content:"";
@@ -189,6 +192,7 @@ font-weight: 600;
     background: black;
     opacity: 0.6;
 }
+
 /*carousel transition*/
 .carousel-item-next,
 .carousel-item-next,
