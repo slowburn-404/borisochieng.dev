@@ -153,32 +153,32 @@ h4{
     outline: none;
 }
 /*----carousel----*/
-#banner h5{
+#hero-banner h5{
 font-size: 40px;
 font-weight: 600;
 }
-#banner p{
+#hero-banner p{
     font-size: 30px;
     font-weight: 500;
     left: 60;
 }
-#banner .school-vision h5{
+#hero-banner .school-vision h5{
     font-size: 40px;
     font-weight: 600;
     left: 60;
 }
-#banner .school-vision p{
+#hero-banner .school-vision p{
     font-size: 30px;
     font-weight:500
 }
-#banner .w-100 {
+#hero-banner .w-100 {
   width: 100% !important;
   height: 92vh;
 }
-#banner .carousel-inner img{
+#hero-banner .carousel-inner img{
     object-fit: cover;
 }
-#banner .carousel-item::before {
+#hero-banner .carousel-item::before {
     content:"";
     display: block;
     position:absolute;
@@ -195,7 +195,7 @@ font-weight: 600;
 .carousel.item.active{
     transition: transform 1.2s ease;
 }
-#banner .btn-primary{
+#hero-banner .btn-primary{
     color: #3f3f95!important;
     
 }
