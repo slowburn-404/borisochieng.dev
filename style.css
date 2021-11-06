@@ -25,21 +25,18 @@ body ::selection{
 }
 /*---scrollbar--*/
 ::-webkit-scrollbar {
-    width: 10px;    
+    width: .85em;    
   }  
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #fff;
-    border-radius: 10px; 
+    background: #990100;
+    /*border-radius: 50vw;*/ 
   }   
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #3f3f95;
-    border-radius: 10px; 
-  }  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #3f3f95; 
+    border-radius: .5em;
+    border: .2em solid #990100; 
   }
 /*---Reusable CSS classes--*/
 .banner-overlay{
@@ -108,9 +105,18 @@ h4{
     font-size: 16px;
     padding: 8px 16px;
     border: none;
-    width: 200px;
+    width: 10em;
     cursor: pointer;
     box-shadow: 0 8px 50px rgba(0,0,0,0.2);
+    transition: all 0.7s;
+}
+.msingi-btn:hover{
+    background: #990100;
+    color: #fff;
+    box-shadow: 0 8px 50px rgba(0,0,0,0.2);
+    transform: scale(1.1);   
+    transition: 0.7s;
+
 }
 /*---Navigation bar---*/
 
@@ -241,6 +247,9 @@ font-weight: 600;
     text-decoration: none;
     color: #990100;
 }
+#programs h4 a:hover{
+    text-decoration: underline;
+}
 .border-light{
     border-top: .2rem solid #3f3f95!important;
 }
@@ -317,41 +326,17 @@ font-weight: 600;
 #events .btn-danger{
     border: none;
     background-color:#fff;
-    border-bottom: 2px solid #3f3f95;
+    /*border-bottom: 2px solid #3f3f95;*/
     color: #3f3f95;
     border-radius: 0;
     bottom: 0;
     top: auto;
+    transition: all 0.1;
 }
 #events .btn-danger:hover{
     transform: scale(1.1);
-    transition: 0.1s ease-in;
+    transition: 0.1;
 }
-/*---Stats--*/
-#stats{
-    /*background-color: #990100;*/
-    margin: 0;
-    padding:0;
-    top:0;
-}
-#stats h1{
-    letter-spacing: 1px;
-}
-.stats i{
-    font-size: 50px;
-    color: #000000;
-}
-.stats h2{
-    font-weight: bold;
-    font-size: 42px;
-    color: #3f3f95;
-}
-.stats p{
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #000000;
-}
-
 /*Our Staff--*/
 #staff{
     background-color: #f5f5f5;
