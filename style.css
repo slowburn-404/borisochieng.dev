@@ -135,15 +135,39 @@ h4{
     float: right;
     text-align: right;
 }
+.navbar .active{
+    color: #3f3f95!important;
+    font-weight: bold;
+}
 .nav-link {
     color: #fff !important;
 }
+.nav-item{
+    position: relative;
+}
+.nav-item a:hover{
+    color: #3f3f95!important;
+}
+.nav-item a:hover::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 3px solid #3f3f95;
+    transition: .4s;
+}
+.nav-item a:hover::before{
+    width: calc(100% - 1rem);
+}
+
 .fa-bars{
     color: #fff !important;
     font-size: 30px !important;
 }
 .navbar-toggler{
     outline: none;
+    border-color: transparent;
 }
 /*----carousel----*/
 #hero-banner h5{
@@ -659,6 +683,7 @@ footer{
 }
 
 /*--- Fixed Background Image --*/
+/*--
 figure{
     position: relative;
     width: 100%;
@@ -687,7 +712,7 @@ figure{
             transform: translateZ(0);
     will-change: transform;
 
-}
+}*/
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"]{
     padding: 1rem;
