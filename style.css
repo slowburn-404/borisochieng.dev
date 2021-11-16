@@ -451,12 +451,7 @@ font-weight: 600;
     width: 18rem;
     height: 25rem;
     object-fit: cover;
-    transition: all .9s ease;
-}
-#blogs .card img:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-    overflow: hidden;
+    max-height: 18rem;
 }
 #blogs .card a{
     text-decoration: none !important;
