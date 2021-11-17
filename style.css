@@ -148,7 +148,6 @@ h4{
 }
 .navbar .active{
     color: var(--accent-colour)!important;
-    font-weight: bold;
 }
 .nav-link {
     color: var(--white) !important;
@@ -444,7 +443,8 @@ font-weight: 600;
     background-color: var(--white-smoke);
 }
 #blogs .card{
-    background-color: var(--white);
+    border: none;
+    background-color: var(--white-smoke);
     overflow: hidden;
 }
 #blogs .card img{
