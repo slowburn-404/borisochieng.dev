@@ -15,6 +15,7 @@ html{
     --white: #fff;
     --white-smoke: #f5f5f5;
     --grey: #f5f5ff;
+    --pitch-black: #000000
 
 }
 body{
@@ -245,7 +246,7 @@ font-weight: 600;
 }
 #about-us img{
     width: 100%;
-    height:65vh;
+    max-height:25rem;
     margin-bottom: 10%;
     object-fit: cover;
     box-shadow: #404040;    
@@ -302,17 +303,17 @@ font-weight: 600;
     box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15 );
 }
 #programs .card-title{
-    color: #000000;
+    color: var(--pitch-black);
 }
 #programs .card-text {
-    color:#000000;
+    color:var(--pitch-black);
 }
 #programs .card a{
     text-decoration: none!important;
 }
 #programs .card p{
     text-decoration: none;
-    color: #000000;
+    color: var(--pitch-black);
 }
 #programs img{   
     object-fit: contain;
@@ -376,7 +377,7 @@ font-weight: 600;
 }
 #staff i{
     font-size: 26px;
-    color: #000000;
+    color: var(--pitch-black);
 }
 #staff p{
     font-weight:500; 
@@ -437,28 +438,17 @@ font-weight: 600;
     filter: brightness(50%);
     transform: rotate(-5deg);
 }
-/*--Events cards--*/
+
+/*--Events/Blogs cards--*/
 #blogs{
-    background-color: var(--white);
+    background-color: var(--white-smoke);
 }
 #blogs .card{
-    border: none;
     background-color: var(--white);
     overflow: hidden;
 }
-/*#blogs .card::before {
-    content:"";
-    display: block;
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: var(--main-colour);
-    opacity: 0.6;
-}*/
 #blogs .card img{
-    width: 18rem;
+    width: 100%;
     height: 25rem;
     object-fit: cover;
     max-height: 18rem;
@@ -586,7 +576,7 @@ footer{
     font-size: 15px;
     line-height: 26px;
     font-weight: 400;
-    color: #000000;
+    color: var(--pitch-black);
     cursor: text;
     text-transform: capitalize;
     transition: transform 0.2s ease-in-out;
