@@ -442,7 +442,7 @@ font-weight: 600;
 
 /*--Events/Blogs cards--*/
 #blogs{
-    background-color: var(--white-smoke);
+    background-color: var(--white);
 }
 #blogs .card{
     border: none;
