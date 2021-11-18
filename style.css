@@ -95,7 +95,7 @@ h4{
 }
 /*-Button*/
 .msingi-btn{
-    display: inline-block;
+    /*display: inline-block;*/
     background: var(--accent-colour);
     color: var(--white);
     text-transform: uppercase;
@@ -103,6 +103,9 @@ h4{
     font-size: 16px;
     padding: 8px 16px;
     border: none;
+    border-radius: 15rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
     width: 10em;
     cursor: pointer;
     box-shadow: 0 8px 50px rgba(0,0,0,0.2);
@@ -264,13 +267,6 @@ font-weight: 600;
 #programs h1{
     letter-spacing: 1px;
 }
-#programs h4 a{
-    text-decoration: none;
-    color: var(--main-colour);
-}
-#programs h4 a:hover{
-    text-decoration: underline;
-}
 .border-light{
     border-top: .2rem solid var(--accent-colour)!important;
 }
@@ -311,7 +307,7 @@ font-weight: 600;
     text-decoration: none!important;
 }
 #programs .card p{
-    text-decoration: none;
+    text-decoration: none!important;
     color: var(--pitch-black);
 }
 #programs img{   
@@ -322,7 +318,6 @@ font-weight: 600;
     color: var(--accent-colour)!important;
     background-color: var(--white);
     border: none;
-    border-bottom: 2px solid var(--accent-colour);
     border-radius: 0;
 }
 #programs i{
