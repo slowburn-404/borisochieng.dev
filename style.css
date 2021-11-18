@@ -40,14 +40,14 @@ body ::selection{
   }  
   /* Track */
   ::-webkit-scrollbar-track {
-    background: var(--main-colour);
+    background: var(--white-smoke);
     /*border-radius: 50vw;*/ 
   }   
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: var(--accent-colour);
     border-radius: .5em;
-    border: .2em solid var(--main-colour); 
+    border: .2em solid var(--white-smoke);
   }
 /*---Reusable CSS classes--*/
 .banner-overlay{
