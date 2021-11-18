@@ -263,9 +263,19 @@ font-weight: 600;
 #programs{
     /*background-color: var(--main-colour);*/
     padding: 20px;
+    background-image: url("/image assets/kids.svg");
+    display: block;
+    object-fit: fill;
 }
 #programs h1{
     letter-spacing: 1px;
+}
+#programs h4 a{
+    text-decoration: none;
+    color: var(--main-colour);
+}
+#programs h4 a:hover{
+    text-decoration: underline;
 }
 .border-light{
     border-top: .2rem solid var(--accent-colour)!important;
@@ -313,6 +323,8 @@ font-weight: 600;
 #programs img{   
     object-fit: contain;
     overflow: hidden;
+    width: 100%;
+    height: 40vh;
 }
 #programs .btn{
     color: var(--accent-colour)!important;
@@ -322,10 +334,6 @@ font-weight: 600;
 }
 #programs i{
     color: var(--accent-colour)!important;
-}
-#programs img{    
-    width: 100%;
-    height: 40vh;
 }
 /*---Events---*/
 #events{
