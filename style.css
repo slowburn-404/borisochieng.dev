@@ -429,6 +429,8 @@ font-weight: 600;
 }
 .item img{
     object-fit: cover;
+    max-height: 15rem;
+    transition: .5s ease-in-out;
 }
 .item{
     transition: .5s ease-in-out;
