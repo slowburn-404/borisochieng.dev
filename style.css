@@ -204,7 +204,7 @@ font-weight: 600;
   max-height: 38rem;
 }
 #hero-banner .carousel-inner img{
-    object-fit: center;
+    object-fit: cover;
 }
 .carousel-container{
     float: right;
