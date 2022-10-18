@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,300&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 html{
     scroll-behavior: smooth;
     font: 62.5%;
 }
-@font-face {
-    font-family: 'WhaleITried'; /*to use later*/
-    src: url('/fonts/whale-i-tried/Whale\ I\ Tried\ -\ TTF.ttf'); /*URL to the font*/
-}
+/* @font-face {
+    font-family: 'WhaleITried'; to use later
+    src: url('/fonts/whale-i-tried/Whale\ I\ Tried\ -\ TTF.ttf'); URL to the font
+} */
 
 /*--Colours--*/
 :root{
@@ -21,7 +21,7 @@ html{
 body{
     margin:0px;
     padding: 0px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: var(--white-smoke);
 }
 body ::selection{
@@ -62,7 +62,8 @@ body ::selection{
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--white-smoke);
-    letter-spacing: 30px;         
+    letter-spacing: 30px;
+    text-transform: uppercase;         
 }
 .banner-overlay::before {
     content:"";
@@ -82,16 +83,32 @@ body ::selection{
 }
 /*Typography*/
 h1{
+    font-size: 4em;
+    font-weight: 400;
 
 }
 h2{
-
+    font-weight: 300;
 }
 h3{
-
+    font-weight: 200;
 }
 h4{
 
+}
+h5{
+    font-size: 40px;
+    font-weight: 400;
+}
+.p1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+.p2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
 }
 /*-Button*/
 .msingi-btn{
@@ -206,9 +223,6 @@ font-weight: 600;
 #hero-banner .carousel-inner img{
     object-fit: cover;
 }
-.carousel-container{
-    float: right;
-}
 #hero-banner .carousel-item::before {
     content:"";
     display: block;
@@ -261,7 +275,6 @@ font-weight: 600;
 #programs{
     /*background-color: var(--main-colour);*/
     padding: 20px;
-    background-image: url("/image assets/kids.svg");
     display: block;
     object-fit: fill;
 }
@@ -423,7 +436,7 @@ font-weight: 600;
 
 /*--Gallery--*/
 #gallery{
-    background-color: var(--white-smoke);
+    background-color: var(--white);
 }
 #gallery h1{
     letter-spacing: 1px;
@@ -443,7 +456,7 @@ font-weight: 600;
 
 /*--Events/Blogs cards--*/
 #blogs{
-    background-color: var(--white);
+    background-color: var(--grey);
 }
 #blogs .card{
     border: none;
@@ -466,14 +479,10 @@ font-weight: 600;
 
 /*--Footer--*/
 footer{    
-    position: absolute;
     width: 100%;
 }
 .page-footer a{
     color: var(--white-smoke);
-}
-.page-footer img{
-    height: 12.5vh;
 }
 .footer-copyright{
     background: var(--main-colour);    
@@ -482,10 +491,11 @@ footer{
     color: var(--white-smoke);
 }
 .page-footer li{
-    color: var(--white-smoke);;
+    color: var(--white-smoke);
+    font-family: 'Poppins', sans-serif;
 }
-.page-footer h6{
-    color: var(--main-colour);
+.page-footer h3{
+    color: var(--main-colour)!important;
 }
 .page-footer p{
     color: var(--white-smoke);
@@ -514,6 +524,9 @@ footer{
 }
 #mbuni{
     background-color: var(--white);
+}
+#mbuni img{
+    object-fit: contain;
 }
 .curriclum-title{
     font-family: WhaleITried;
@@ -657,6 +670,24 @@ footer{
     background-color: var(--accent-colour);
     border-radius: 10px;
     color: var(--white);
+}
+
+/*Events/Blog page*/
+#events-blog-content .card img{
+    transition: all 0.7s ease;
+}
+#events-blog-content .card img:hover{
+    transform: scale(1.1);   
+    transition: 0.7s;
+    
+}
+#events-blog-content .card-title a{
+    color: var(--pitch-black);
+    text-decoration: none;
+}
+#events-blog-content .card-title a:hover{
+    color: var(--main-colour);
+    text-decoration: underline;
 }
 
 
