@@ -93,12 +93,9 @@ h2{
 h3{
     font-weight: 200;
 }
-h4{
-
-}
 h5{
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 4em;
+    font-weight: 300;
 }
 .p1{
     font-family: 'Poppins', sans-serif;
@@ -163,9 +160,14 @@ h5{
 .navbar-nav li a{
     float: right;
     text-align: right;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: .2rem;
 }
 .navbar .active{
     color: var(--accent-colour)!important;
+    font-weight: 600;
 }
 .nav-link {
     color: var(--white) !important;
@@ -175,6 +177,7 @@ h5{
 }
 .nav-item a:hover{
     color: var(--accent-colour)!important;
+    font-weight: 500;
 }
 .nav-item a:hover::before{
     content: "";
@@ -182,7 +185,6 @@ h5{
     bottom: 0;
     left: 0;
     width: 0%;
-    border-bottom: 3px solid var(--accent-colour);
     transition: .4s;
 }
 .nav-item a:hover::before{
@@ -694,6 +696,10 @@ footer{
 #events-blog-content .card-title a:hover{
     color: var(--main-colour);
     text-decoration: underline;
+}
+/*--coming soon page--*/
+#hero img{
+    max-height: 20vh;
 }
 
 
