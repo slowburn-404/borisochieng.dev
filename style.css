@@ -8,16 +8,34 @@ html{
     src: url('/fonts/whale-i-tried/Whale\ I\ Tried\ -\ TTF.ttf'); URL to the font
 } */
 
-/*--Colours--*/
+
 :root{
+    /*--Colours--*/
     --main-colour: #990100;
     --accent-colour: #1F1D89;
     --white: #fff;
     --white-smoke: #f5f5f5;
     --grey: #f5f5ff;
-    --pitch-black: #000000
+    --pitch-black: #000000;
+
+    /*--font sizes--*/
+    --fs-200: 1.25rem;
+    --fs-400: 1.5rem;
+    --fs-xl: clamp(3rem, 12vw + 1rem, 5rem);
 
 }
+ /* font sizes for repsonsive layout*/
+ @media (min-width: 40em) {
+    :root{
+        --fs-200: 1.25rem;
+        --fs-400: 1.5rem;
+        /*--fs-xl: 4rem;*/
+    }
+    h1{
+        font-size: var(--fs-xl);
+        font-weight: 400;
+    }    
+ }
 body{
     margin:0px;
     padding: 0px;
@@ -83,7 +101,7 @@ body ::selection{
 }
 /*Typography*/
 h1{
-    font-size: 4em;
+    font-size: var(--fs-xl);
     font-weight: 400;
 
 }
@@ -94,18 +112,16 @@ h3{
     font-weight: 200;
 }
 h5{
-    font-size: 4em;
+    font-size: 2em;
     font-weight: 300;
 }
 .p1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5em;
-    font-weight: 200;
+    font-size: var(--fs-400);
+    font-weight: 300;
 }
 .p2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1em;
-    font-weight: 100;
+    font-size: var(--fs-200);
+    font-weight: 200;
 }
 /*-Button*/
 .msingi-btn{
@@ -161,7 +177,7 @@ h5{
     float: right;
     text-align: right;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400;
     letter-spacing: .2rem;
 }
@@ -220,7 +236,7 @@ font-weight: 600;
 }
 #hero-banner .w-100 {
   width: 100% !important;
-  max-height: 38rem;
+  max-height: 40em;
 }
 #hero-banner .carousel-inner img{
     object-fit: cover;
@@ -704,7 +720,7 @@ footer{
 
 
 
-/*---Media queries--*/
+/*---Media queries-
 
 @media(max-width:992px){
 
@@ -714,9 +730,9 @@ footer{
     
 }
 
-@media(max-width:576px){
+@media(min-width:576px){
     
-}
+}*/
 
 /* -- Firefox Bud fix --*/
 .carousel-item{
