@@ -29,7 +29,7 @@ html{
     :root{
         --fs-200: 1.25rem;
         --fs-400: 1.5rem;
-        /*--fs-xl: 4rem;*/
+        --fs-xl: 4rem;
     }
     h1{
         font-size: var(--fs-xl);
@@ -106,7 +106,8 @@ h1{
 
 }
 h2{
-    font-weight: 300;
+    font-size: var(--fs-400);
+    font-weight: 350;
 }
 h3{
     font-weight: 200;
@@ -478,7 +479,6 @@ font-weight: 600;
 }
 #blogs .card{
     border: none;
-    background-color: var(--white-smoke);
     overflow: hidden;
 }
 #blogs .card img{
@@ -631,14 +631,7 @@ footer{
     color: var(--accent-colour);
 }
 #about-us-content h1{
-    letter-spacing: 1px;
-}
-#about-us-content .card-img{
-    height: 200px;
-    object-fit: cover;
-    margin-top: 0 auto!important;
-    margin-bottom: 0 auto!important;
-    float: left;
+    letter-spacing: .3rem;
 }
 #intro{
     background-color: var(--white-smoke);
@@ -650,16 +643,14 @@ footer{
 #intro .border-light{
     color: var(--accent-colour)!important;
 }
-#about-us-content .activity-cards{
-    display: flex;
-    flex: 1 auto;
-}
-#activities .card{
+#activities-offered .card{
     border-radius: 10px;
     box-shadow: 0 8px 50px rgba(0,0,0,0.2);
 }
 .activity-cards img{
-    padding: 0;
+    padding: 0!important;
+    margin: 0!important;
+    object-fit: cover;
 }
 .about-us-container{
     background-color: var(--accent-colour);
@@ -706,7 +697,7 @@ footer{
     max-height: 16rem;
 }
 #events-blog-content .card-title a{
-    color: var(--pitch-black);
+    color: var(--accent-colour);
     text-decoration: none;
 }
 #events-blog-content .card-title a:hover{
