@@ -22,6 +22,7 @@ html{
     --fs-200: 1.25rem;
     --fs-400: 1.5rem;
     --fs-xl: clamp(3rem, 12vw + 1rem, 5rem);
+    --fs-sm: .5rem
 
 }
  /* font sizes for repsonsive layout*/
@@ -30,11 +31,15 @@ html{
         --fs-200: 1.25rem;
         --fs-400: 1.5rem;
         --fs-xl: 4rem;
+        --fs-sm: .5rem
     }
     h1{
         font-size: var(--fs-xl);
         font-weight: 400;
-    }    
+    }
+    .banner-overlay h2{
+        letter-spacing: .1rem;
+    } 
  }
 body{
     margin:0px;
@@ -72,15 +77,15 @@ body ::selection{
     position: relative;
     text-align: center;
 }
-.banner-overlay p { 
+.banner-overlay h2 { 
     position: absolute; 
     font-weight: 600;
-    font-size: 40px;
-    top: 65%;
+    font-size: 3rem;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--white-smoke);
-    letter-spacing: 30px;
+    letter-spacing: 2rem;
     text-transform: uppercase;         
 }
 .banner-overlay::before {
@@ -96,7 +101,7 @@ body ::selection{
 }
 .banner-overlay img{
     width: 100%;
-    height: 50vh;
+    height: 22rem;
     object-fit: cover;
 }
 /*Typography*/
@@ -113,7 +118,7 @@ h3{
     font-weight: 200;
 }
 h5{
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 .p1{
@@ -131,7 +136,7 @@ h5{
     color: var(--white);
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 16px;
+    font-size: var(--fs-200);
     padding: 8px 16px;
     border: none;
     border-radius: 15rem;
@@ -217,24 +222,6 @@ h5{
     border-color: transparent;
 }
 /*----carousel----*/
-#hero-banner h5{
-font-size: 40px;
-font-weight: 600;
-}
-#hero-banner p{
-    font-size: 30px;
-    font-weight: 500;
-    left: 60;
-}
-#hero-banner .school-vision h5{
-    font-size: 40px;
-    font-weight: 600;
-    left: 60;
-}
-#hero-banner .school-vision p{
-    font-size: 30px;
-    font-weight:500
-}
 #hero-banner .w-100 {
   width: 100% !important;
   max-height: 40em;
@@ -342,6 +329,14 @@ font-weight: 600;
 }
 #programs .card-text {
     color:var(--pitch-black);
+}
+#programs p a{
+    text-decoration: none;
+    color: var(--main-colour)
+}
+#programs p a:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 #programs .card a{
     text-decoration: none!important;
@@ -704,26 +699,44 @@ footer{
     color: var(--main-colour);
     text-decoration: underline;
 }
+/*-Individual blog post-*/
+.blog-content li{
+    font-size: var(--fs-400);
+}
+.blog-content li a{
+    text-decoration: none;
+    color: var(--accent-colour);
+    
+}
+.blog-content li a:hover{
+    color: var(--main-colour);
+    text-decoration: underline;
+}
+.blog-socials i{
+    color: var(--accent-colour);
+}
+.socials i:hover{
+    color: var(--main-colour)
+}
+.blog-content img{
+    max-height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
 /*--coming soon page--*/
 #hero img{
     max-height: 20vh;
 }
-
-
-
-/*---Media queries-
-
-@media(max-width:992px){
-
+/*--media query to hide carousel-caption and reduce letter spacing on small screens--*/
+@media  (max-width:40em) {
+    .carousel-caption p{
+        display: none;
+    }
+    .banner-overlay h2{
+        letter-spacing: .5rem;
+        font-weight: 300;
+    }
 }
-
-@media(max-width:768px){
-    
-}
-
-@media(min-width:576px){
-    
-}*/
 
 /* -- Firefox Bud fix --*/
 .carousel-item{
@@ -733,38 +746,6 @@ footer{
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
 }
-
-/*--- Fixed Background Image --*/
-/*--
-figure{
-    position: relative;
-    width: 100%;
-    height: 60%;
-    margin: 0! important;
-}
-.fixed-wrap{
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-#fixed{
-    background-image: url('assets\css\fonts\images\fistbg.jpg');
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100;
-    background-size: cover;
-    background-position: center center;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    will-change: transform;
-
-}*/
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"]{
     padding: 1rem;
