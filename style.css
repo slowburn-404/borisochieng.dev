@@ -284,9 +284,9 @@ h5{
     display: block;
     object-fit: fill;
 }
-#programs h1{
+/*#programs h1{
     letter-spacing: 1px;
-}
+}*/
 #programs h4 a{
     text-decoration: none;
     color: var(--main-colour);
@@ -736,6 +736,10 @@ footer{
         letter-spacing: .5rem;
         font-weight: 300;
     }
+    .program-card .btn-danger{
+        opacity: 1;
+    }
+
 }
 
 /* -- Firefox Bud fix --*/
