@@ -40,3 +40,5 @@ jobs:
           server: ftp.themsingiacademy.co.ke
           username: admin@themsingiacademy.co.ke
           password: ${{secrets.FTP_PASSWORD}}
+          exclude: |
+            - ./.vscode
