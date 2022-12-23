@@ -41,5 +41,7 @@ jobs:
           username: admin@themsingiacademy.co.ke
           password: ${{secrets.FTP_PASSWORD}}
           exclude: |
-            - ./.vscode
-            - ./.git
+            **/.vscode/**
+            **/.git*
+            **/.git/**
+            **/image-assets/**
