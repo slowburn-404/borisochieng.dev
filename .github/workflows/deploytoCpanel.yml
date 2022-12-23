@@ -37,6 +37,6 @@ jobs:
         id: deployment
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with: 
-          server: ${{secrets.FTP_SERVER}}
-          username: ${{secrets.FTP_USERNAME}}
+          server: ftp.themsingiacademy.co.ke
+          username: admin@themsingiacademy.co.ke
           password: ${{secrets.FTP_PASSWORD}}
