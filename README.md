@@ -1,1 +1,1 @@
-#Static Website for The Msingi School Academy
+##Static Website for The Msingi School Academy
