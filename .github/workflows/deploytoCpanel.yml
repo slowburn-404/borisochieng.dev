@@ -42,3 +42,4 @@ jobs:
           password: ${{secrets.FTP_PASSWORD}}
           exclude: |
             - ./.vscode
+            - ./.git
