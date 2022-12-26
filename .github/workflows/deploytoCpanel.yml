@@ -44,3 +44,4 @@ jobs:
             **/.vscode/**
             **/.git*
             **/.git/**
+            **/README.md
