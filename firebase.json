@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "~/borisochieng.dev",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
