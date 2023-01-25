@@ -67,3 +67,5 @@ node_modules/
 
 #vs code
 .vscode
+firebase.json
+.firebaserc
