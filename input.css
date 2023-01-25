@@ -1,0 +1,8 @@
+@tailwind base;
+
+.bgColor {
+    background-color: #000000;
+}
+
+@tailwind components;
+@tailwind utilities;
