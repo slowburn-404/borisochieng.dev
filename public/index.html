@@ -39,7 +39,7 @@
                 </li>
             </ul>
             <div class="flex md:order-2">
-                <button type="button" style="background-color: #000000;" class="px-5 py-2.5 mr-3 text-sm font-medium text-center text-white rounded-full hover:bg-purple hover:font-bold focus:ring-2 focus:outline-none focus:ring-purple md:mr-0">Download
+                <button type="button" id="downloadCV" style="background-color: #000000;" class="px-5 py-2.5 mr-3 text-sm font-medium text-center text-white rounded-full hover:bg-purple hover:font-bold focus:ring-2 focus:outline-none focus:ring-purple md:mr-0">Download
                     CV</button>
                 <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-0 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
@@ -68,13 +68,15 @@
             </div>
         </div>
     </nav>
-    <main class="container overflow-y-scroll mx-auto min-h-screen min-w-screen snap-y snap-mandatory">
+    <main class="container overflow-y-scroll mx-auto min-h-screen min-w-screen">
         <!-- Hero section content -->
-        <section id="hero-section" class="pt-20 min-h-screen min-w-screen snap-start">
-            <div class="grid grid-cols-1 p-4 h-full md:grid-cols-2">
+        <section id="hero-section" class="pt-20 min-h-screen">
+            <div class="grid grid-cols-1 items-center p-4 md:grid-cols-2">
                 <div class="flex flex-col order-first gap-2 place-self-center p-2 mx-auto">
-                    <h1><span id="name-intro" class="text-4xl font-bold text-center text-black md:text-9xl"></span></h1>
-                    <p class="text-2xl text-left text-black">I build mobile applications
+                    <h1><span id="name-intro" class="text-4xl font-bold text-center text-black md:text-9xl">
+                            <p class="hidden">hi</p>
+                        </span></h1>
+                    <p class="text-2xl text-left text-black">Building mobile applications a line of code at time
                     </p>
                     <div class="flex gap-4 justify-center items-center">
                         <button class="px-5 py-2.5 font-medium text-white bg-black rounded-full border-black cursor-pointer hover:bg-transparent hover:text-black hover:border-2 hover:border-black">
@@ -93,13 +95,13 @@
                         </a>
                     </div>
                 </div>
-                <div class="order-last place-self-end mx-auto">
+                <div class="order-last place-self-center mx-auto">
                     <img class="items-center w-full h-full" src="/image-assets/hero-image.svg" alt="">
                 </div>
             </div>
         </section>
-        <section id="about" class="pt-20 min-h-screen min-w-screen snap-start">
-            <div class="grid grid-cols-1 gap-0 p-4 mx-auto lg:grid-cols-2">
+        <section id="about" class="pt-20 h-full">
+            <div class="grid grid-cols-1 gap-0 p-4 mx-auto min-height-screen lg:grid-cols-2">
                 <div class="flex flex-col gap-2 justify-center items-center">
                     <img width="50px" height="50px" src="/image-assets/avatar-batman-dark.svg" alt="">
                     <h1 class="text-4xl font-bold text-center text-black">about me</h1>
@@ -121,7 +123,7 @@
                 </div>
             </div>
         </section>
-        <section id="projects" class="pt-20 min-h-screen snap-start">
+        <section id="projects" class="pt-20 min-h-screen">
             <!--projects intro section-->
             <div class="grid grid-cols-1 gap-4 p-4">
                 <div class="flex flex-col gap-2 justify-center items-center">
@@ -163,7 +165,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="pt-20 min-h-screen snap-start">
+        <section id="contact" class="pt-20 min-h-screen">
             <div class="flex flex-col gap-2 justify-center items-center">
                 <img width="50px" height="50px" src="image-assets/connect-dark.svg" alt="contact">
                 <h1 class="text-4xl font-bold text-center text-black">contact me</h1>
@@ -189,18 +191,18 @@
                 <div class="place-self-center mx-auto w-full bg-white rounded-lg border border-gray-200 shadow-lg">
                     <form class="flex flex-col justify-center items-center p-6">
                         <div class="relative z-0 mb-6 w-full group">
-                            <input type="email" name="floating_email" id="floating_email" class="block px-0 py-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-black appearance-none focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " autocomplete="off" required />
+                            <input type="email" name="floating_email" id="floating_email" class="block px-0 py-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " autocomplete="off" required />
                             <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
                                 address</label>
                         </div>
                         <div class="relative z-0 mb-6 w-full group">
-                            <input type="text" name="subject" id="subject" class="block px-0 py-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-black appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " autocomplete="off" required />
+                            <input type="text" name="subject" id="subject" class="block px-0 py-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " autocomplete="off" required />
                             <label for="subject" class="peer-focus:font-medium absolute text-sm text-black  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Subject</label>
                         </div>
                         <div class="relative z-0 mb-6 w-full group">
-                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Leave a message...</label>
-                            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-black focus:ring-0 focus:border-purple" placeholder=" " autocomplete="off"></textarea>
-
+                            <label for="message" class="block mb-2 text-sm font-medium text-gray-600 dark:text-white">Leave a
+                                message...</label>
+                            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-600 focus:ring-0 focus:border-purple" placeholder=" " autocomplete="off"></textarea>
                         </div>
                         <button type="submit" style="background-color: #000000;" class="px-5 py-2.5 w-full text-sm font-medium text-center text-white bg-black rounded-full focus:ring-4 focus:outline-none focus:ring-purple sm:w-auto">Submit</button>
 
@@ -208,7 +210,7 @@
                 </div>
             </div>
         </section>
-        <section id="blogs" class="pt-20 min-h-screen snap-start">
+        <section id="blogs" class="pt-20 min-h-screen">
             <div class="flex flex-col gap-2 justify-center items-center">
                 <img width="50px" height="50px" src="image-assets/blog-dark.svg" alt="blog">
                 <h1 class="text-4xl font-bold text-center text-black">blog</h1>
@@ -293,6 +295,7 @@
     <script src="app.js"></script>
     <script src="autotyping.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <script type="module" src="downloadFromFirebaseStorage.js"></script>
 </body>
 
 </html>

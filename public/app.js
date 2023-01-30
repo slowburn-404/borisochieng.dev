@@ -7,9 +7,4 @@ navigationItems.forEach(link => {
     link.addEventListener("click", () => {
         dropDownMenu.classList.toggle("hidden")
     })
-}
-)
-
-
-
-
+})
