@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./*.{html,js}'],
+    content: [
+        '../public/index.html',
+        '../**/*.{html,js}',
+        '../**/*.js'
+    ],
     theme: {
         extend: {
             screens: {
@@ -10,7 +14,6 @@ module.exports = {
                 Ubuntu: ['Ubuntu', 'sans-serif']
             },
             colors: {
-                'purple': '#4A6CF7',
                 'black': '#000000'
             }
         },

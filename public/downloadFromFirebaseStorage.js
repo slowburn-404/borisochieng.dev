@@ -60,10 +60,7 @@ downloadButton.addEventListener('click', function() {
                 case 'storage/unauthorized':
                     // User doesn't have permission to access the object
                     break;
-                case 'storage/canceled':
-                    // User canceled the upload
-                    break;
-                case 'storage/unauthenticates':
+                case 'storage/unauthenticated':
                     //USer is unauthenticated
                     break;
                 case 'storage/unknown':
