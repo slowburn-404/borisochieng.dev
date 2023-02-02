@@ -73,8 +73,7 @@
         <section id="hero-section" class="container grid pt-20 mx-auto min-h-screen">
             <div class="grid grid-cols-1 place-items-center p-4 md:grid-cols-2">
                 <div class="flex flex-col gap-2 justify-center p-2 mx-auto">
-                    <h1><span id="name-intro" class="text-4xl font-bold text-left text-black md:text-9xl">
-                        </span>
+                    <h1 class="text-4xl font-bold text-left text-black md:text-9xl">I'm <span id="name-intro"></span>
                     </h1>
                     <p class="text-2xl text-left text-black">Building mobile applications one line of code at time
                     </p>
@@ -187,14 +186,14 @@
                 </div>
                 <!--Contact form-->
                 <div class="place-self-center mx-auto w-full bg-white rounded-lg shadow-2xl">
-                    <form class="flex flex-col justify-center items-center p-6">
+                    <form id="contact-form" class="flex flex-col justify-center items-center p-6">
                         <div class="relative z-0 mb-6 w-full group">
-                            <input type="name" name="floating_name" id="floating_name" class="block px-0 py-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-900 appearance-none focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " autocomplete="off" required />
-                            <label for="floating_name" class="peer-focus:font-medium absolute text-sm text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
+                            <input type="name" name="name" id="name" class="block px-0 py-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-900 appearance-none focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " autocomplete="off" required />
+                            <label for="name" class="peer-focus:font-medium absolute text-sm text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
                         </div>
                         <div class="relative z-0 mb-6 w-full group">
-                            <input type="email" name="floating_email" id="floating_email" class="block px-0 py-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-900 appearance-none focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " autocomplete="off" required />
-                            <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                            <input type="email" name="email" id="email" class="block px-0 py-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-900 appearance-none focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " autocomplete="off" required />
+                            <label for="email" class="peer-focus:font-medium absolute text-sm text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
                                 address</label>
                         </div>
                         <div class="relative z-0 mb-6 w-full group">
@@ -297,7 +296,7 @@
     <script src="app.js"></script>
     <script src="autotyping.js"></script>
     <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
-    <script src="sendEMail.js"></script>
+    <script src="getFormData.js"></script>
     <script type="module" src="downloadFromFirebaseStorage.js"></script>
 </body>
 
