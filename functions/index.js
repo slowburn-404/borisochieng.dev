@@ -9,6 +9,16 @@ const admin = require('firebase-admin');
 admin.initializeApp();
 const PORT = process.env.PORT || 5000;
 
+const transporter = nodemailer.createTransport({
+    service: process.env.EMAIL_SERVICE,
+    host: process.env.EMAIL_HOST,
+    port: parseInt(process.env.EMAIL_PORT),
+    secure: true,
+    auth: {
+        user: process.env.EMAIL_ID,
+        pass: process.env.EMAIL_PASSWORD
+    }
+});
 //middleware to serve static files
 app.use(express.static('../public'));
 app.use(express.json());
@@ -18,22 +28,13 @@ app.get('/', (req, res) => {
 });
 app.post('/', (req, res) => {
     console.log(req.body);
-    const transporter = nodemailer.createTransport({
-        service: process.env.EMAIL_SERVICE,
-        host: process.env.EMAIL_HOST,
-        port: parseInt(process.env.EMAIL_PORT),
-        secure: true,
-        auth: {
-            user: process.env.EMAIL_ID,
-            pass: process.env.EMAIL_PASSWORD
-        }
-    });
     const mailoptions = {
         from: req.body.email,
         to: process.env.EMAIL_ID,
         subject: req.body.subject,
         text: req.body.subject
     }
+
     transporter.sendMail(mailoptions, (error, info) => {
         if (error) {
             console.log(error);
@@ -43,10 +44,11 @@ app.post('/', (req, res) => {
             res.send('success');
         }
     })
-})
+});
 app.listen(PORT, () => {
     console.log('Server is running on port ${PORT}')
 });
+exports.sendEMail = functions.https.onRequest((app));
 
 
 // // Create and deploy your first functions
