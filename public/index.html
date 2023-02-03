@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!--Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css">
+    <!--TailwindCSS-->
     <link rel="stylesheet" href="style.css">
     <!--Flowbite-->
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css">
@@ -39,7 +43,7 @@
                 </li>
             </ul>
             <div class="flex md:order-2">
-                <button type="button" id="downloadCV" class="px-5 py-2 mr-3 text-sm font-medium text-center text-white bg-black rounded-full md:py-2.5 hover:opacity-80 hover:font-bold focus:ring-2 focus:outline-none focus:ring-gray-500 md:mr-0">Download
+                <button type="button" id="downloadCV" class="px-5 py-2 mr-3 text-md font-bold text-center text-black bg-black rounded-full md:py-2.5 hover:opacity-80 hover:font-bold focus:ring-2 focus:outline-none focus:ring-black md:mr-0">Download
                     CV</button>
                 <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-0 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
@@ -106,19 +110,10 @@
                     <h1 class="text-4xl font-bold text-center text-black">about me</h1>
                 </div>
                 <div class="flex col-span-1 justify-center items-center">
-                    <p class="p-4 mx-auto text-xl text-center text-black">I am a recent graduate from Maseno University with
-                        a
-                        degree
-                        in
+                    <p class="p-4 mx-auto text-xl text-center text-black">Having recently graduated from university with a degree in
                         Information
-                        Technology. As an Android developer, I am skilled in Kotlin/Java and Android Studio and have
-                        a
-                        strong foundation in object-oriented programming.
-                        During my time at university, I completed a number of projects focused on Android
-                        development,
-                        including a chat bot that helps students keep track of classroom activities. I am also
-                        skilled
-                        in HTML/CSS and have two static websites in production.</p>
+                        Technology. I chose the Android Developer career path. I have developed skills in Kotlin/Java, Firebase and Android SDK. I am also pretty well rounded
+                        with skills in frontend web technologies like HTML, CSS, Bootstrap CSS, Tailwind CSS, server side scripting with PHP and MySQL databases for the backend. To show for it, I have two static websites in production. I'm no stranger to the GNU/Linux world as I use <a href="https://manjaro.org/" class="underline">Manjaro Linux</a> as my daily driver. </p>
                 </div>
             </div>
         </section>
@@ -132,32 +127,29 @@
             </div>
             <!--project cards-->
             <div class="grid grid-cols-1 gap-2 p-4 h-full md:grid-cols-3">
-                <div class="flex flex-col justify-center items-stretch p-6 mx-auto h-full bg-black rounded-lg shadow-xl hover:opacity-80">
+                <div class="flex flex-col justify-center items-start p-6 mx-auto h-full bg-black rounded-lg shadow-xl hover:opacity-80">
                     <a class="flex flex-col flex-1 justify-between" href="https://github.com/slowburn-404/StudentAssistant" target="_blank">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Chat Bot</h5>
-                        <p class="font-normal text-white">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Vero ipsam nihil quisquam aut ullam fuga accusantium odit voluptatem quam, quo
-                            quia
-                            distinctio nostrum harum excepturi nulla iste autem beatae quae?</p>
+                        <p class="font-normal text-white">A chat bot for setting reminders with notifications, helping
+                            users stay organized and on track.</p>
                     </a>
-                    <div class="flex flex-wrap justify-start items-end mt-2">
-                        <img src="image-assets/icons/kotlin.svg" alt="Kotlin">
-                        <img src="image-assets/icons/firebase.svg" alt="Firebase">
-                        <img src="image-assets/icons/dialogflow.svg" alt="Dialogflow">
-                        <img src="image-assets/icons/git.svg" alt="Git">
+                    <div class="flex mt-2">
+                        <img width="50" height="50" src="image-assets/icons/kotlin.svg" alt="Kotlin">
+                        <img width="50" height="50" src="image-assets/icons/firebase.svg" alt="Firebase">
+                        <img width="50" height="50" src="image-assets/icons/dialogflow.svg" alt="Dialogflow">
+                        <img width="50" height="50" src="image-assets/icons/git.svg" alt="Git">
                     </div>
                 </div>
-                <div class="flex flex-col items-stretch place-self-center p-6 mx-auto h-full bg-black rounded-lg shadow-xl hover:opacity-80">
+                <div class="flex flex-col items-start justify-center p-6 mx-auto h-full bg-black rounded-lg shadow-xl hover:opacity-80">
                     <a class="flex flex-col flex-1 justify-between" href="https://themsingiacademy.co.ke" target="_blank">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">The Msingi Academy School</h5>
-                        <p class="font-normal text-white">Here are the biggest enterprise
-                            technology acquisitions of 2021 so far.</p>
+                        <p class="font-normal text-white">A static website built with responsive design.</p>
                     </a>
-                    <div class="flex flex-wrap justify-start items-end mt-2">
-                        <img src="image-assets/icons/html-5.svg" alt="HTML-5">
-                        <img src="image-assets/icons/css3.svg" alt="CSS-3">
-                        <img src="image-assets/icons/bootstrap.svg" alt="Bootstrap">
-                        <img src="image-assets/icons/git.svg" alt="Git">
+                    <div class="flex mt-2">
+                        <img width="50" height="50" src="image-assets/icons/html-5.svg" alt="HTML-5">
+                        <img width="50" height="50" src="image-assets/icons/css3.svg" alt="CSS-3">
+                        <img width="50" height="50" src="image-assets/icons/bootstrap.svg" alt="Bootstrap">
+                        <img width="50" height="50" src="image-assets/icons/git.svg" alt="Git">
                     </div>
                 </div>
             </div>
@@ -176,7 +168,7 @@
                     </div>
                     <div class="flex gap-2 items-center">
                         <img width="50px" height="50px" src="image-assets/icons/mail-dark.svg" alt="Email">
-                        <a class="hover:underline" href="mailto:borisochieng.dev" target="_blank">info@borisochieng.dev</a>
+                        <a class="hover:underline" href="mailto:borisochola32@gmail.com" target="_blank">borisochola32@gmail.com</a>
                     </div>
                     <div class="flex gap-2 items-center">
                         <img src="image-assets/icons/github.svg" alt="Github">
@@ -188,16 +180,16 @@
                 <div class="place-self-center mx-auto w-full bg-white rounded-lg shadow-2xl">
                     <form id="contact-form" class="flex flex-col justify-center items-center p-6" method="post">
                         <div class="relative z-0 mb-6 w-full group">
-                            <input type="name" name="name" id="name" class="block px-0 py-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-900 appearance-none focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " autocomplete="off" required />
+                            <input type="name" name="name" id="name" class="block px-0 py-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-900 appearance-none focus:outline-none focus:ring-0 peer focus:border-blue-600" placeholder=" " autocomplete="off" required />
                             <label for="name" class="peer-focus:font-medium absolute text-sm text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
                         </div>
                         <div class="relative z-0 mb-6 w-full group">
-                            <input type="email" name="email" id="email" class="block px-0 py-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-900 appearance-none focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " autocomplete="off" required />
+                            <input type="email" name="email" id="email" class="block px-0 py-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-900 appearance-none focus:outline-none focus:ring-0 peer" placeholder=" " autocomplete="off" required />
                             <label for="email" class="peer-focus:font-medium absolute text-sm text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
                                 address</label>
                         </div>
                         <div class="relative z-0 mb-6 w-full group">
-                            <input type="text" name="subject" id="subject" class="block px-0 py-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-900 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " autocomplete="off" required />
+                            <input type="text" name="subject" id="subject" class="block px-0 py-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-900 appearance-none focus:outline-none focus:ring-0 peer" placeholder=" " autocomplete="off" required />
                             <label for="subject" class="peer-focus:font-medium absolute text-sm text-black  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-purple peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Subject</label>
                         </div>
                         <div class="relative z-0 mb-6 w-full group">
@@ -205,7 +197,7 @@
                                 message...</label>
                             <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-900 focus:ring-0 focus:border-purple" placeholder=" " autocomplete="off"></textarea>
                         </div>
-                        <button type="submit" class="px-5 py-2.5 w-full text-sm font-medium text-center text-white bg-black rounded-full hover:opacity-80 focus:ring-4 focus:outline-none focus:ring-black sm:w-auto">Submit</button>
+                        <button type="submit" class="px-5 py-2.5 text-md font-bold text-center text-black rounded-full hover:opacity-80 focus:ring-2 focus:outline-none focus:ring-black">Submit</button>
 
                     </form>
                 </div>
@@ -225,33 +217,13 @@
                     <div class="p-5">
                         <a href="#">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-black hover:underline">
-                                Binding.</h5>
+                                View Binding in Android.</h5>
                         </a>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Necessitatibus dolorum esse doloremque hic, qui ad
                             reprehenderit nulla molestias fuga exercitationem inventore nisi tempore, accusamus
                             nostrum
                             culpa commodi voluptas voluptates consequatur.</p>
-                        <a href="#" class="items-center font-medium text-center text-black text-md hover:underline">
-                            Read more...
-                        </a>
-                    </div>
-                </div>
-                <div class="max-w-sm h-full bg-white rounded-lg border shadow-2xl">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="image-assets/android.jpg" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black hover:underline">
-                                Host your Web Application on Firebase</h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Quasi veritatis consectetur sit omnis deserunt at vero.
-                            Quas,
-                            voluptate deserunt iure facere ab dolorem nisi omnis eveniet consequatur earum hic
-                            recusandae?</order>
-                        </p>
                         <a href="#" class="items-center font-medium text-center text-black text-md hover:underline">
                             Read more...
                         </a>

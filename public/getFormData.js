@@ -1,3 +1,15 @@
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+});
+
 const contactForm = document.querySelector('#contact-form');
 
 //get input fields data
@@ -23,13 +35,19 @@ contactForm.addEventListener('submit', (e) => {
     xhr.onload = function() {
         console.log(xhr.responseText);
         if (xhr.responseText == 'success') {
-            alert('Email sent');
+            Toast.fire({
+                icon: 'success',
+                title: 'Email Sent'
+            });
             senderName.value = '';
             email.value = '';
             subject.value = '';
             message.value = '';
         } else {
-            alert('Something went wrong');
+            Toast.fire({
+                icon: 'error',
+                title: 'Error! Something went wrong.',
+            });
         }
     }
     //send form data to backend '/functions/index.js'
