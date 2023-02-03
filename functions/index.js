@@ -7,6 +7,7 @@ const nodemailer = require('nodemailer');
 //create admin object and initialize firebase-admin
 const admin = require('firebase-admin');
 admin.initializeApp();
+const cors = require('cors');
 const PORT = process.env.PORT || 5000;
 
 const transporter = nodemailer.createTransport({
@@ -19,9 +20,15 @@ const transporter = nodemailer.createTransport({
         pass: process.env.EMAIL_PASSWORD
     }
 });
+// Automatically allow cross-origin requests
+app.use(cors({
+    origin: true
+}));
+
 //middleware to serve static files
 app.use(express.static('../public'));
 app.use(express.json());
+
 //send get request
 app.get('/', (req, res) => {
     res.sendFile(`${__dirname}../public/index.html`);
