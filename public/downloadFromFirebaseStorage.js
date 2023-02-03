@@ -7,9 +7,9 @@ import {
     ref,
     getDownloadURL
 } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-storage.js";
-/*import {
+import {
     getAnalytics
-} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";*/
+} from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -28,6 +28,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
+const analytics = getAnalytics(app);
 
 //download file from URL
 const downloadButton = document.getElementById("downloadCV");

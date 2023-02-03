@@ -24,10 +24,10 @@ contactForm.addEventListener('submit', (e) => {
         console.log(xhr.responseText);
         if (xhr.responseText == 'success') {
             alert('Email sent');
-            senderName.value = ' ';
-            email.value = ' ';
-            subject.value = ' ';
-            message.value = ' ';
+            senderName.value = '';
+            email.value = '';
+            subject.value = '';
+            message.value = '';
         } else {
             alert('Something went wrong');
         }

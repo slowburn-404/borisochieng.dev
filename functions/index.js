@@ -56,12 +56,3 @@ app.listen(PORT, () => {
     console.log('Server is running on port ${PORT}')
 });
 exports.sendEMail = functions.https.onRequest((app));
-
-
-// // Create and deploy your first functions
-// // https://firebase.google.com/docs/functions/get-started
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//   functions.logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
