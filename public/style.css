@@ -615,10 +615,6 @@ video {
   z-index: -10;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
 .m-1 {
   margin: 0.25rem;
 }
