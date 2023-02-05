@@ -7,14 +7,12 @@ module.exports = {
     ],
     theme: {
         extend: {
-            screens: {
-                "sm": "480px"
-            },
             fontFamily: {
                 Ubuntu: ['Ubuntu', 'sans-serif']
             },
             colors: {
-                'black': '#000000'
+                'black': '#000000',
+                'bg-gray-900': '#000000'
             }
         },
     },
