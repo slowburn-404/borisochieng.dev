@@ -83,7 +83,7 @@ var AutoTyping = function(e) {
     }
 }]).default;
 
-const heroSectionText = ["boris", "a Jr Android Developer", "a Freelancer"];
+const heroSectionText = ["boris", "a Jr Android Dev", "a Freelancer"];
 const heroSectionTextTyping = new AutoTyping('#name-intro', heroSectionText, {
     typeSpeed: 50,
     deleteSpeed: 50,
