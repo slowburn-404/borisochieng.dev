@@ -45,4 +45,4 @@ jobs:
             **/.git*
             **/.git/**
             **/.github/**
-            **/README.md
+            **.md
